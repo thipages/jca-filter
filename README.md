@@ -26,7 +26,7 @@ jca_filter(logic,otherConditions={});
 ```javascript
 const conditions=jca_filter(
     "('field1,eq,val1' OR 'field2,eq,val2') AND 'field3,eq,val3'",
-    {order:'filed1'}
+    {order:'field1'}
 );
 /**
  * conditions content
