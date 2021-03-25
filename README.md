@@ -19,7 +19,7 @@ jca_filter(logic,otherConditions={});
     jca_filter(logic,otherConditions={});
 </script>
 ```
-## Usage
+## Example
 
 ```javascript
 const conditions=jca_filter(
