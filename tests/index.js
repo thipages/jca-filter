@@ -1,5 +1,5 @@
 //const logic='("A" OR "A1" AND "B") OR ("C" AND "D" OR "E")';
-import jcaFilter from "./../esm/index.js";
+import jca_filter from "./../esm/index.js";
 const expected=[
     '{"filter":["A"],"filter1":["A1","B"],"filter2":["C","D"],"filter3":["E"]}'
 ]
@@ -25,14 +25,14 @@ const getDetails=(parameters)=>{
 };
 logics.forEach(
     v=>{
-        let observed=JSON.stringify(jcaFilter(v[0]));
+        let observed=JSON.stringify(jca_filter(v[0]));
         let ok=observed===v[1]?'OK':'NOK';
         let details={observed,expected:v[1]};
         document.body.insertAdjacentHTML('beforeend',`<div>${ok} : ${v[2]}${getDetails(details)} </div>`);
     }
 );
 
-let forReadme=jcaFilter(
+let forReadme=jca_filter(
     "('field1,eq,val1' OR 'field2,eq,val2') AND 'field3,eq,val3'",
     {order:'field1'}
 );
