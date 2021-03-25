@@ -39,3 +39,6 @@ const conditions=jca_filter(
  * 
 */
 ```
+
+## LIMITATION
+only OR and AND operators are available
