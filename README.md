@@ -1,5 +1,7 @@
 # JCA-FILTER
 
+Facilitate filters creation for [JS-CRUD-API](https://github.com/thipages/js-crud-api)
+
 # Installation
 
 
