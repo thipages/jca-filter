@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>JCA-FILTER</title>
+    <script type="module" src="./site/index.js"></script>
+    <style>
+        .full-width {
+            width:100%;
+        }
+    </style>
 </head>
 <body>
-
+<h1>Filter generator</h1>
+<h3>Enter a filter or <a id="example" href="#">pick an example</a></h3>
+<textarea id="content" rows="5" class="full-width"></textarea>
+<button id="generate">Generate PHP-CRUD-API filter</button>
+<pre id="generated"></pre>
 </body>
 </html>
