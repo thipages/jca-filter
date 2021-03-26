@@ -6,6 +6,7 @@ example.addEventListener(
 const bold=t=>`<span style="font-weight:bold">${t}</span>`;
 generate.addEventListener(
     'click',(e)=>{
+        generated.innerHTML='';
         if (content.value) {
             let g=jca_filter(content.value);
             let mm=Object.entries(g).map(
