@@ -6,7 +6,7 @@ export default {
     output: {
         file: './min.js',
         format: 'iife',
-        name: 'jcafilter'
+        name: 'jca_filter'
     },
     plugins: [
         resolve(),

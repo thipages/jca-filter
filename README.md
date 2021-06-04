@@ -5,10 +5,10 @@ Facilitate filters creation for [JS-CRUD-API](https://github.com/thipages/js-cru
 # Installation
 
 
-- via npm : _npm i jca-filter_
+- via npm : _npm i jca_filter_
 
 ```javascript
-import jca_filter from 'js-filter';
+import jca_filter from 'jca_filter';
 // then
 jca_filter(logic,otherConditions={});
 
