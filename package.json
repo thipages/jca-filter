@@ -1,5 +1,5 @@
 {
-  "name": "jca-filter",
+  "name": "jca_filter",
   "version": "0.1.1",
   "description": "Facilitate filters creation for JS-CRUD-API",
   "keywords": [
