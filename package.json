@@ -1,6 +1,6 @@
 {
   "name": "jca-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Facilitate filters creation for JS-CRUD-API",
   "keywords": [
     "filter","js-crud-api","php-crud-api","helper"
