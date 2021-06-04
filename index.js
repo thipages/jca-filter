@@ -250,12 +250,16 @@ var index = (logic,otherConditions={})=> {
     });
     const castArray=a=>Array.isArray(a)?a:[a];
     const postFilter=i=>i===0?'':i;
-    return Object.assign(otherConditions,parseBooleanQuery(re).reduce(
-        (acc,v,i)=>{
-            acc['filter'+postFilter(i)]=castArray(v).map(v=>stack[v]).join(',');
-            return acc;
-        },{}
-    )); 
+    const parsed=parseBooleanQuery(re);
+    
+    return parsed
+        ? Object.assign(otherConditions,parsed.reduce(
+            (acc,v,i)=>{
+                acc['filter'+postFilter(i)]=castArray(v).map(v=>stack[v]);
+                return acc;
+            },{}
+        ))
+        :{}; 
 };
 
 export default index;
