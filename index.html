@@ -8,6 +8,10 @@
         .full-width {
             width:100%;
         }
+        .long-word-breaker {
+            word-break: break-all;
+            white-space: pre-wrap;
+        }
     </style>
 </head>
 <body>
@@ -17,7 +21,7 @@
 <button id="generate">Generate PHP-CRUD-API filter</button>
 
 <div id="container" style="display: none">
-    <pre id="generated"></pre>
+    <pre id="generated" class="long-word-breaker"></pre>
     <button style="margin:0.1em" id="copy">Copy</button>
 </div>
 <hr />
